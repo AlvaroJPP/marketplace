@@ -1,0 +1,149 @@
+/* Container principal da loja */
+.lojaContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 100vh;
+  width: 100vw; /* Usa toda a largura da tela */
+  margin: 0;
+  gap: 40px; /* Espaço entre as colunas esquerda e direita */
+}
+
+/* Colunas esquerda (comprados) e direita (à venda) */
+.colunaEsquerda,
+.colunaDireita {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Títulos de categoria */
+.produtosCategoria {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Subtítulo (nome da seção) */
+.subtitulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Lista de produtos com até 3 colunas responsivas */
+.produtosLista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card de produto */
+.produtoCard {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.produtoCard:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem do produto */
+.imagemProduto {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Nome do produto */
+.nomeProduto {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Descrição do produto */
+.descricaoProduto {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Preço do produto */
+.precoProduto {
+  font-size: 16px;
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+/* Botão de editar */
+.botaoEditar {
+  margin-top: 15px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.botaoEditar:hover {
+  background-color: #0056b3;
+}
+
+/* Popup de edição de produto */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popupContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popupContent input,
+.popupContent textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popupContent button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.popupContent button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,35 @@
+/* CSS para o rodapé */
+.footer {
+  background-color: #f8f8f8;  /* Cor de fundo suave */
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #ddd; /* Linha superior para separar o rodapé */
+  width: 100%;  /* Largura total da tela */
+  z-index: 100;  /* Certifique-se de que o rodapé não sobreponha outros elementos */
+  position: relative;  /* Define a posição do rodapé como relativa */
+}
+
+/* Container do rodapé */
+.container {
+  max-width: 1200px;  /* Limita a largura do conteúdo */
+  margin: 0 auto;  /* Centraliza o conteúdo */
+}
+
+/* Copyright */
+.copyright {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Adicionando uma classe para garantir que o rodapé fique no final da página */
+html, body {
+  height: 100%;  /* Garante que a página ocupe 100% da altura */
+  margin: 0;  /* Remove a margem padrão */
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;  /* Faz o conteúdo acima do rodapé preencher o espaço disponível */
+}
+

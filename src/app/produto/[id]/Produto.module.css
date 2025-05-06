@@ -1,0 +1,124 @@
+.produto-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f7f7f7;
+  padding: 1rem;
+
+}
+
+.produto-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 2rem;
+  gap: 2rem;
+  width: 1000px;
+  height: 700px;
+}
+
+.produto-imagem-container {
+  flex: 1;
+}
+
+.produto-detalhes {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.produto-nome {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.produto-preco {
+  font-size: 1.5rem;
+  color: #facc15;
+  margin-bottom: 1rem;
+}
+
+.produto-descricao {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.produto-estoque {
+  margin-bottom: 1.5rem;
+}
+
+.quantidade-input {
+  width: 60px;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.estoque-disponivel {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.produto-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Botão Adicionar ao Carrinho */
+.btn-carrinho {
+  padding: 1rem 2rem;
+  background-color: #34c759; /* Verde para carrinho */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-carrinho:hover {
+  background-color: #28a745; /* Tom mais escuro de verde */
+}
+
+/* Botão Comprar Agora */
+.btn-comprar {
+  padding: 1rem 2rem;
+  background-color: #ff3b30; /* Vermelho para comprar */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #e63946; /* Tom mais escuro de vermelho */
+}
+
+.produto-vendedor {
+  margin-top: 2rem;
+}
+
+.vendedor-nome {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.vendedor-email {
+  font-size: 1rem;
+  color: #555;
+}

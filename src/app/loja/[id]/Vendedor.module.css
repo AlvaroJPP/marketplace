@@ -1,0 +1,131 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
+    /* Faz a seção ocupar toda a altura da janela */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .bannerContainer {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .banner {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .logo {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background: #fff;
+  }
+  
+  .header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .titulo {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .descricao {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .subtitulo {
+    font-size: 1.75rem;
+    color: #444;
+    margin: 20px 0;
+  }
+  
+  .produtosContainer {
+    flex: 1; /* Faz a grid crescer para ocupar o espaço restante */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .cardProduto {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+  }
+  
+  .cardProduto:hover {
+    transform: translateY(-5px);
+  }
+  
+  .imagemProduto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .infoProduto {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .produtoNome {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0 0 10px;
+  }
+  
+  .produtoPreco {
+    font-size: 1rem;
+    color: #2c7a7b;
+    margin: 0 0 15px;
+  }
+  
+  .botaoCompra {
+    background-color: #f79c42;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .botaoCompra:hover {
+    background-color: #e68929;
+  }

@@ -1,0 +1,118 @@
+/* Ajustando o estilo do contêiner para ter altura mínima */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;  /* Garante que o conteúdo preencha o espaço disponível */
+}
+
+.container {
+  padding: 40px 20px;
+  min-width:700px;
+  max-width:700px;
+  margin: 0 auto;
+  background-color: #fff8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  flex: 1;  /* Faz o conteúdo preencher o espaço restante */
+  min-height: 80vh;  /* Garante que o contêiner tenha pelo menos 80% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centraliza o conteúdo verticalmente */
+  align-items: center;  /* Centraliza o conteúdo horizontalmente */
+  margin-bottom: 10px;
+  border: 1px black solid;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.itens {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  align-items: center;
+  gap: 20px;
+  transition: box-shadow 0.2s;
+}
+
+.item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagem {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.info p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.subtotal {
+  text-align: right;
+  min-width: 120px;
+  color: #222;
+}
+
+.subtotal span {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.resumo {
+  margin-top: 40px;
+  text-align: right;
+}
+
+.resumo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.botao {
+  background-color: #d4a373;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #bc8b56;
+}
